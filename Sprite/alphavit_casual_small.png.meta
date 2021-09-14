@@ -1,0 +1,1152 @@
+fileFormatVersion: 2
+guid: 22a2897c48ceac64b930431d58e95cc5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 138221366445192691
+    second: alphavit_casual_small_0
+  - first:
+      213: 981791793238651711
+    second: alphavit_casual_small_1
+  - first:
+      213: -1403583989564027753
+    second: alphavit_casual_small_2
+  - first:
+      213: -3939441113018294123
+    second: alphavit_casual_small_3
+  - first:
+      213: 26000640407741094
+    second: alphavit_casual_small_4
+  - first:
+      213: -6715647182129858688
+    second: alphavit_casual_small_5
+  - first:
+      213: -4729037668972259873
+    second: alphavit_casual_small_6
+  - first:
+      213: -8215548774999601913
+    second: alphavit_casual_small_7
+  - first:
+      213: 7543110650644317353
+    second: alphavit_casual_small_8
+  - first:
+      213: 6489599164869791147
+    second: alphavit_casual_small_9
+  - first:
+      213: 8979520956824406930
+    second: alphavit_casual_small_10
+  - first:
+      213: 2884280492383453068
+    second: alphavit_casual_small_11
+  - first:
+      213: 1801543218797828394
+    second: alphavit_casual_small_12
+  - first:
+      213: -3257822675775048180
+    second: alphavit_casual_small_13
+  - first:
+      213: -526564874984276027
+    second: alphavit_casual_small_14
+  - first:
+      213: 5957869437559763168
+    second: alphavit_casual_small_15
+  - first:
+      213: 2737316833492722471
+    second: alphavit_casual_small_16
+  - first:
+      213: 3365637649801030602
+    second: alphavit_casual_small_17
+  - first:
+      213: -2019541591878439354
+    second: alphavit_casual_small_18
+  - first:
+      213: 3345500685238132549
+    second: alphavit_casual_small_19
+  - first:
+      213: -549314281997604607
+    second: alphavit_casual_small_20
+  - first:
+      213: -6136571836075338874
+    second: alphavit_casual_small_21
+  - first:
+      213: -2026399922669755674
+    second: alphavit_casual_small_22
+  - first:
+      213: 1562734879127673500
+    second: alphavit_casual_small_23
+  - first:
+      213: -8549608182656970374
+    second: alphavit_casual_small_24
+  - first:
+      213: 7756035104359737687
+    second: alphavit_casual_small_25
+  - first:
+      213: 3575718888806086972
+    second: alphavit_casual_small_26
+  - first:
+      213: 5412652976487488446
+    second: alphavit_casual_small_27
+  - first:
+      213: 8483338827758808492
+    second: alphavit_casual_small_28
+  - first:
+      213: 5360380834704977621
+    second: alphavit_casual_small_29
+  - first:
+      213: -1785093530739372837
+    second: alphavit_casual_small_30
+  - first:
+      213: -4254296981560305400
+    second: alphavit_casual_small_31
+  - first:
+      213: -6249849468183068228
+    second: alphavit_casual_small_32
+  - first:
+      213: 3332915710299385580
+    second: alphavit_casual_small_33
+  - first:
+      213: -1315025357993905224
+    second: alphavit_casual_small_34
+  - first:
+      213: -8964898036412043069
+    second: alphavit_casual_small_35
+  - first:
+      213: 9195871330561252622
+    second: alphavit_casual_small_36
+  - first:
+      213: 7177713450293057278
+    second: alphavit_casual_small_37
+  - first:
+      213: 2632713972322437273
+    second: alphavit_casual_small_38
+  - first:
+      213: -3190461445432636194
+    second: alphavit_casual_small_39
+  - first:
+      213: 4144807356184406749
+    second: alphavit_casual_small_40
+  - first:
+      213: 334364603874425290
+    second: alphavit_casual_small_41
+  - first:
+      213: -123445770822583249
+    second: alphavit_casual_small_42
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alphavit_casual_small_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5b557b99f0be100800000000000000
+      internalID: 138221366445192691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3332672f6600ad00800000000000000
+      internalID: 981791793238651711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c4c994cc7758ce0800000000000000
+      internalID: -1403583989564027753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_3
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590a9f40e2b4459c0800000000000000
+      internalID: -3939441113018294123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2af67d17f5c5000800000000000000
+      internalID: 26000640407741094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087fb48087a3dc2a0800000000000000
+      internalID: -6715647182129858688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5977bab451f5eb0800000000000000
+      internalID: -4729037668972259873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70dc04fbae18cfd80800000000000000
+      internalID: -8215548774999601913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 66
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4ce11fb238ea860800000000000000
+      internalID: 7543110650644317353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 66
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad4cbc9e00bf0a50800000000000000
+      internalID: 6489599164869791147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 66
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bc1b41cbaad9c70800000000000000
+      internalID: 8979520956824406930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_11
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 66
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fba1583d5070820800000000000000
+      internalID: 2884280492383453068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 66
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2955f3330e500910800000000000000
+      internalID: 1801543218797828394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 66
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06373d7983e9c2d0800000000000000
+      internalID: -3257822675775048180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 66
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf3d5b390441b8f0800000000000000
+      internalID: -526564874984276027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_15
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 66
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0f7e3ffaa9ea250800000000000000
+      internalID: 5957869437559763168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 50
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723e70a3827ecf520800000000000000
+      internalID: 2737316833492722471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_17
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 50
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb221f4c9525be20800000000000000
+      internalID: 3365637649801030602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_18
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 50
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e65f64f9529f3e0800000000000000
+      internalID: -2019541591878439354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 50
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fd173e52b9d6e20800000000000000
+      internalID: 3345500685238132549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 50
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109eb7722917068f0800000000000000
+      internalID: -549314281997604607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_21
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 50
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68310149d6486daa0800000000000000
+      internalID: -6136571836075338874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_22
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 50
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2e364b108c0e3e0800000000000000
+      internalID: -2026399922669755674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_23
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 50
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a9484c713ffa510800000000000000
+      internalID: 1562734879127673500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 34
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7155f7d7a0b95980800000000000000
+      internalID: -8549608182656970374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 34
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75962dc85d8f2ab60800000000000000
+      internalID: 7756035104359737687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_26
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 34
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39f0f762618f9130800000000000000
+      internalID: 3575718888806086972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_27
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 34
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb5ff3643b9d1b40800000000000000
+      internalID: 5412652976487488446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_28
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 34
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cada7d997bfdab570800000000000000
+      internalID: 8483338827758808492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_29
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 34
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dee669f7f5e36a40800000000000000
+      internalID: 5360380834704977621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_30
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 34
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc8e6144e21a37e0800000000000000
+      internalID: -1785093530739372837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_31
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 34
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809d41d7f63b5f4c0800000000000000
+      internalID: -4254296981560305400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1c84595031449a0800000000000000
+      internalID: -6249849468183068228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 18
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceea6b21e25e04e20800000000000000
+      internalID: 3332915710299385580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_34
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 18
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3742a776710cde0800000000000000
+      internalID: -1315025357993905224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_35
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 18
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c03014ebb8469380800000000000000
+      internalID: -8964898036412043069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 18
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d5d4ad04c4e9f70800000000000000
+      internalID: 9195871330561252622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 18
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6d2489a5c5c9360800000000000000
+      internalID: 7177713450293057278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 18
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9988c7bb867498420800000000000000
+      internalID: 2632713972322437273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_39
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 18
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc886b183439b3d0800000000000000
+      internalID: -3190461445432636194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda2ccf8450558930800000000000000
+      internalID: 4144807356184406749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_41
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9366fe5d6e3a400800000000000000
+      internalID: 334364603874425290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alphavit_casual_small_42
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c7819b9be694ef0800000000000000
+      internalID: -123445770822583249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
