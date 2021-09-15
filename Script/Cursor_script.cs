@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class Cursor_script : MonoBehaviour
 {
     public Canvas canvas;
-    public Text text, text2;
     public static bool exchange, ignoreInput;
     public static Camera cam;
 
@@ -148,9 +147,7 @@ public class Cursor_script : MonoBehaviour
             }
             else if ((!hit || hit.transform.tag != "Letter") && tappedCellPlate != null && collectedObj != null)
             {
-                text.text = "start downed";
                 tappedCellPlate.Down();
-                text.text += " downed";
                 tappedCellPlate = null;
             }
         }

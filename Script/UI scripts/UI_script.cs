@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UI_script : MonoBehaviour
 {
-    public GameObject settingsButto;
+    public GameObject settingsMenu;
     public Image nextTurnImag, backgroun, rules; 
-    public static GameObject settingsButton;
+    public static GameObject settingsMenuStatic;
     public static Image nextTurnImage, background;
 
     [SerializeField]
@@ -22,7 +23,7 @@ public class UI_script : MonoBehaviour
 
     void Start()
     {
-        settingsButton = settingsButto;
+        settingsMenuStatic = settingsMenu;
         nextTurnImage = nextTurnImag;
         background = backgroun;
         scoreImages = scoreImage;
@@ -30,14 +31,9 @@ public class UI_script : MonoBehaviour
         Hide();
     }
 
-    private void Update()
-    {
-        if (Input.touchCount > 0 && nextTurnImage.enabled)
-            Hide();
-    }
     public static void  NextTurn()
     {
-        nextTurnImage.enabled = true;
+        nextTurnImage.gameObject.SetActive(true);
         background.enabled = true;
         Cursor_script.ignoreInput = true;
         for (int i = 0; i < 3; i++)
@@ -50,7 +46,6 @@ public class UI_script : MonoBehaviour
 
     public void Hide()
     {
-        nextTurnImage.enabled = false;
         background.enabled = false;
         Cursor_script.ignoreInput = false;
         for (int i = 0; i < 3; i++)
@@ -58,10 +53,21 @@ public class UI_script : MonoBehaviour
             scoreImages[i].sprite = null;
             scoreImages[i].color = new Color(0, 0, 0, 0);
         }
+        nextTurnImage.gameObject.SetActive(false);
     }
 
     public void Settings()
     {
-        settingsButton.SetActive(!settingsButton.active);
+        settingsMenuStatic.gameObject.SetActive(true);
+        Cursor_script.ignoreInput = true;
+        background.enabled = true;
+    }
+    public static void OpenUrl()
+    {
+        Application.OpenURL("https://github.com/Deathchacram");
+    }
+    public static void Load()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

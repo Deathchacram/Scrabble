@@ -13,29 +13,30 @@ public class Rules_script : MonoBehaviour
             pages[0] = this;
         else
             pages[1] = this;
+        gameObject.SetActive(false);
     }
 
     public void NextPage()
     {
         if (firstPage)
         {
-            pages[1].enabled = true;
-            enabled = false;
+            pages[1].gameObject.SetActive(true);
+            gameObject.SetActive(false);
         }
         else
         {
-            pages[0].enabled = true;
-            pages[1].enabled = false;
+            pages[0].gameObject.SetActive(true);
+            pages[1].gameObject.SetActive(false);
         }
     }
 
     public static void OpenRules()
     {
-        pages[0].enabled = true;
+        pages[0].gameObject.SetActive(true);
     }
     public static void CloseRules()
     {
-        pages[0].enabled = false;
-        pages[1].enabled = false;
+        pages[0].gameObject.SetActive(false);
+        pages[1].gameObject.SetActive(false);
     }
 }

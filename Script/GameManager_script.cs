@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameManager_script : MonoBehaviour
 {
     public static int turn; //номер игрока, который сейчас ходит
-    public static bool extendedDictionary = false;      //расширенный словарь
+    public static bool dictionaryCheck = true;      //расширенный словарь
     public static bool endingTurn;
     public static bool vertical = false, horizontal = false;    //ореинтация слова. нужна для определения доступных полей и формирования самого слова
     public static List<Player_script> players = new List<Player_script>();
@@ -378,7 +378,7 @@ public class GameManager_script : MonoBehaviour
         turn = (turn + 1) % players.Count;
         players[turn].TurnStart();
         players[turn].ChangeLetters();
-        //UI_script.NextTurn();
+        UI_script.NextTurn();
     }
     public int FindWord(string w)
     {
