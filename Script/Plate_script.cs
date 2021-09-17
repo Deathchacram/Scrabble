@@ -41,7 +41,6 @@ public class Plate_script : MonoBehaviour
     }
     public IEnumerator TestCoroutine()
     {
-        Cursor_script.ignoreInput = true;
         yield return new WaitForSeconds(0.5f);
         for (int i = 0; i < 7; i++)
         {
@@ -54,7 +53,5 @@ public class Plate_script : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         if (GameManager_script.endingTurn)
             GameManager_script.Next();
-        else
-            Cursor_script.ignoreInput = false;
     }
 }

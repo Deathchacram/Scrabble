@@ -13,6 +13,7 @@ public class SetupLetters_script : MonoBehaviour
 
     void Awake()
     {
+        lettersInBank = new List<Letter_script>();
         for (int i = 0; i < 32; i++)
         {
             for (int l = 0; l < countOfLetter[i]; l++)

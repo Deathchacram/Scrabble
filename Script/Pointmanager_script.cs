@@ -12,6 +12,8 @@ public class Pointmanager_script : MonoBehaviour
     private static int l = 0;
     void Awake()
     {
+        Debug.Log("sdasda");
+        points = new List<Point_script>();
         singleton = this;
         for(int i = 0; i < 100; i++)
         {

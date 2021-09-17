@@ -14,6 +14,12 @@ public class Player_script : MonoBehaviour
 
     void Start()
     {
+        gameObject.SetActive(false);
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public void StartGame()
+    {
         GameManager_script.players.Add(this);
         GameObject obj = Instantiate(platePrefab, platePos, Quaternion.identity);
         plate = obj.GetComponent<Plate_script>();
@@ -30,17 +36,16 @@ public class Player_script : MonoBehaviour
         scorePlate.hasParent = true;
         scorePlate.isHuman = isHuman;
         scorePlate.UpdateScore(score);
-        Debug.Log(scorePlate.gameObject.name);
     }
-
-    void Update()
+    public void EndGame()
     {
-
+        plate = null;
+        scorePlate = null;
     }
+
     public void AddPoints(int points)
     {
         score += points;
-        Debug.Log(score);
         scorePlate.UpdateScore(score);
     }
     public void ChangeLetters()
@@ -64,5 +69,9 @@ public class Player_script : MonoBehaviour
             if (cs.let != null)
                 cs.let.Show();
         }
+    }
+    public void Disable()
+    {
+        gameObject.SetActive(false);
     }
 }

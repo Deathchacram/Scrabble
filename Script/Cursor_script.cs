@@ -48,7 +48,6 @@ public class Cursor_script : MonoBehaviour
             Cell_script.StopShowAvailable();
             if (collectedObj != null && hit)
             {
-                Debug.Log(hit.transform.tag);
                 if (hit.transform.tag == "Field cell")   //установка буквы на поле
                 {
                     Cell_script cell = hit.transform.GetComponent<Cell_script>();
@@ -96,10 +95,7 @@ public class Cursor_script : MonoBehaviour
                     collectedObj.Translate();
                     collectedObj = null;
                 }
-                catch (Exception ex)
-                {
-                    Debug.Log(ex.ToString());
-                }
+                catch (Exception ex) { }
             }
             tappedCellPlate = null;
         }
@@ -113,7 +109,6 @@ public class Cursor_script : MonoBehaviour
                 if (tappedCellPlate.let != null)
                 {
                     tappedCellPlate.Exchange();
-                    Debug.Log("1111");
                 }
             }
         }
@@ -130,19 +125,19 @@ public class Cursor_script : MonoBehaviour
             {
                 if (hit.transform.tag == "Letter" && tappedCellPlate == null && collectedObj != null)
                 {
-                //    text.text = " Upped";
-                //    tappedCellPlate = hit.transform.GetComponent<CellPlate_script>();
-                //    tappedCellPlate.Up();
+                    //    text.text = " Upped";
+                    //    tappedCellPlate = hit.transform.GetComponent<CellPlate_script>();
+                    //    tappedCellPlate.Up();
                 }
                 else if (hit.transform.tag == "Letter" && tappedCellPlate != null && collectedObj != null)
                 {
-                    /*CellPlate_script cps = hit.transform.GetComponent<CellPlate_script>();
+                    CellPlate_script cps = hit.transform.GetComponent<CellPlate_script>();
                     if (cps != tappedCellPlate)
                     {
                         tappedCellPlate.Down();
                         tappedCellPlate = cps;
                         tappedCellPlate.Up();
-                    }*/
+                    }
                 }
             }
             else if ((!hit || hit.transform.tag != "Letter") && tappedCellPlate != null && collectedObj != null)
@@ -152,19 +147,20 @@ public class Cursor_script : MonoBehaviour
             }
         }
 
+        //touch
+
         /*if (Input.touchCount > 0 && !ignoreInput)
         {
             RaycastHit2D hit = Ray();
 
             Touch touch = Input.GetTouch(0);
-            Vector3 touchPos = cam.ScreenToWorldPoint(Input.GetTouch(0).position);
 
             if (!exchange)
             {
                 if (collectedObj != null)
                 {
-                    touchPos = cam.ScreenToWorldPoint(new Vector3(touchPos.x, touchPos.y, 0));
-                    collectedObj.transform.position = new Vector3(touchPos.x, touchPos.y, 0);
+                    Vector3 touchPos = cam.ScreenToWorldPoint(touch.position);
+                    collectedObj.transform.position = touchPos;
                 }
                 if (touch.phase == TouchPhase.Began)                                            //TouchPhase Began
                 {
@@ -183,30 +179,9 @@ public class Cursor_script : MonoBehaviour
                 else if (touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)   //TouchPhase Move
                 {
                     hit = Ray();
-                    if (hit)
+                    if ((!hit || hit.transform.tag != "Letter") && tappedCellPlate != null && collectedObj != null)
                     {
-                        if (hit.transform.tag == "Letter" && tappedCellPlate == null && collectedObj != null)
-                        {
-                            text.text = " Upped";
-                            tappedCellPlate = hit.transform.GetComponent<CellPlate_script>();
-                            tappedCellPlate.Up();
-                        }
-                        else if (hit.transform.tag == "Letter" && tappedCellPlate != null && collectedObj != null)
-                        {
-                            CellPlate_script cps = hit.transform.GetComponent<CellPlate_script>();
-                            if (cps != tappedCellPlate)
-                            {
-                                tappedCellPlate.Down();
-                                tappedCellPlate = cps;
-                                tappedCellPlate.Up();
-                            }
-                        }
-                    }
-                    else if ((!hit || hit.transform.tag != "Letter") && tappedCellPlate != null && collectedObj != null)
-                    {
-                        text.text = "start downed";
                         tappedCellPlate.Down();
-                        text.text += " downed";
                         tappedCellPlate = null;
                     }
                 }
@@ -224,7 +199,7 @@ public class Cursor_script : MonoBehaviour
                                 cell.SetLetter();
                                 collectedObj = null;
                             }
-                            else if (cell.selected)
+                            else if (cell.selected)     //замена на поле
                             {
                                 cell.ChangeLetter(collectedObj);
                                 collectedObj = null;

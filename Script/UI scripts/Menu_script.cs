@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Menu_script : BaseUI_script
+public class Menu_script : MonoBehaviour
 {
-    public GameObject dictionary, support, exit;
+    public GameObject dictionary, support, exit, newGame;
+    public bool MainMenu;
 
     [SerializeField]
     private Sprite[] sprites;  //0 - проверять; 1 - не проверять
@@ -12,7 +14,8 @@ public class Menu_script : BaseUI_script
     void Start()
     {
         dictionarySprite = dictionary.GetComponent<Image>();
-        gameObject.SetActive(false);
+        if (!MainMenu)
+            gameObject.SetActive(false);
     }
 
     public void OpenSupport()
@@ -23,6 +26,14 @@ public class Menu_script : BaseUI_script
     public void Exit()
     {
         exit.gameObject.SetActive(true);
+    }
+    public void CloseApp()
+    {
+        Application.Quit();
+    }
+    public void Close()
+    {
+        gameObject.SetActive(false);
     }
     public void Dictionary()
     {
@@ -39,7 +50,16 @@ public class Menu_script : BaseUI_script
     }
     private void OnDisable()
     {
-        UI_script.background.enabled = false;
-        Cursor_script.ignoreInput = false;
+        try
+        {
+            UI_script.background.enabled = false;
+            Cursor_script.ignoreInput = false;
+        }
+        catch(Exception ex) { }
+    }
+
+    public void NewGameMenu()
+    {
+        newGame.gameObject.SetActive(true);
     }
 }

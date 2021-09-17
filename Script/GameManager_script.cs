@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameManager_script : MonoBehaviour
 {
     public static int turn; //номер игрока, который сейчас ходит
-    public static bool dictionaryCheck = true;      //расширенный словарь
+    public static bool dictionaryCheck = true;      //проверка по словарю
     public static bool endingTurn;
     public static bool vertical = false, horizontal = false;    //ореинтация слова. нужна для определения доступных полей и формирования самого слова
     public static List<Player_script> players = new List<Player_script>();
@@ -25,11 +25,22 @@ public class GameManager_script : MonoBehaviour
 
     void Start()
     {
+        turn = 0;
+        players = new List<Player_script>();
+        word = new List<Cell_script>();
+        coreLetter = null;
+        Debug.Log("start");
         Invoke("PlayerSettings", 0.1f);
         gm = this;
     }
     private void PlayerSettings()
     {
+        GameObject[] player = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject p in player)
+        {
+            if (p.active)
+                p.GetComponent<Player_script>().StartGame();
+        }
         for (int i = 1; i < players.Count; i++)
         {
             if (players[i] != null)
@@ -62,7 +73,6 @@ public class GameManager_script : MonoBehaviour
             {
                 if (letter.neighbors[2].attachedLetter != null && letter.neighbors[0].attachedLetter == null)      //удачи разобраться в этом
                 {
-                    Debug.Log("vertical added");
                     word.Insert(0, letter);
 
                     if (letter.attached)
@@ -72,7 +82,6 @@ public class GameManager_script : MonoBehaviour
                 }
                 else if (letter.neighbors[2].attachedLetter != null)
                 {
-                    Debug.Log("vertical added  111");
 
                     if (word.IndexOf(letter.neighbors[0]) == -1)
                     {
@@ -88,7 +97,6 @@ public class GameManager_script : MonoBehaviour
                 }
                 else if (letter.neighbors[0].attachedLetter != null)
                 {
-                    Debug.Log("vertical added 222");
                     if (word.IndexOf(letter.neighbors[0]) == -1 && word.IndexOf(letter) == -1)
                         word.Insert(0, letter);
                     else
@@ -138,7 +146,6 @@ public class GameManager_script : MonoBehaviour
         }
         else if (horizontal)
         {
-            Debug.Log("horizontal added");
             try
             {
                 if (letter.neighbors[3].attachedLetter != null && letter.neighbors[1].attachedLetter == null)
@@ -214,14 +221,14 @@ public class GameManager_script : MonoBehaviour
         }
 
 
-        string wordString = "";
+        /*string wordString = "";
 
         foreach (Cell_script cs in word)
         {
             wordString += cs.attachedLetter.letter;
         }
 
-        Debug.Log(wordString);
+        Debug.Log(wordString);*/
         gm.ButtonUpdate();
     }
 
@@ -229,14 +236,16 @@ public class GameManager_script : MonoBehaviour
     {
         if (letter == coreLetter)
         {
-            while (word.Count != 0)
+            int i = 0;
+            while (word.Count != 1)
             {
-                if (word[0] != coreLetter)
-                    word[0].GetLetter();
+                if (word[i] != coreLetter)
+                    word[i].GetLetter();
                 else
-                    word.Remove(letter); //пропускаем эту букву. Она уже удаляется в рамках GrtLetter
+                    i++;//пропускаем эту букву. Она уже удаляется в GetLetter
             }
             vertical = horizontal = false;
+            word.Remove(letter);
         }
         else
         {
@@ -275,40 +284,41 @@ public class GameManager_script : MonoBehaviour
         }
 
         int counter = 0;
-
         foreach (Cell_script sc in word)   //если все буквы злова закреплены
         {
             if (sc.attached)
                 counter++;
         }
-
         if (counter == word.Count)
         {
+            Debug.Log("clear");
             word.Clear();
+            vertical = horizontal = false;
         }
 
 
-        string wordString = "";
+        /*string wordString = "";
 
         foreach (Cell_script cs in word)
         {
             wordString += cs.attachedLetter.letter;
         }
 
-        Debug.Log(wordString);
+        Debug.Log(wordString);*/
         gm.ButtonUpdate();
     }
 
     public void ButtonUpdate()
     {
         if (word.Count == 0)
-        {
             endButtonImage.sprite = endButton[0];
-        }
         else
-        {
             endButtonImage.sprite = endButton[1];
-        }
+
+        if(Cursor_script.exchange)
+            endButtonImage.color = new Color(0.8f, 0.8f, 0.8f, 1);
+        else
+            endButtonImage.color = new Color(1, 1, 1, 1);
     }
     public void EndTurn()
     {
@@ -316,42 +326,38 @@ public class GameManager_script : MonoBehaviour
         {
             string wordString = "";
             foreach (Cell_script cs in word)
-            {
-                cs.selected = false;
-                cs.attached = true;
                 wordString += cs.attachedLetter.letter;
-            }
-            foreach (Cell_script cs in word)
-            {
-                cs.SetPoints();
-            }
 
-            int count = 0;
-            foreach (CellPlate_script cs in players[turn].plate.cells)
+            if ((dictionaryCheck && FindWord(wordString)) || !dictionaryCheck)
             {
-                if (cs.let != null)
-                    count++;
-            }
-            if (count == 0 && !endingTurn)
-                players[turn].AddPoints(15);
+                int count = 0;
 
-            players[turn].ChangeLetters();
-            Pointmanager_script.MovePoints();
-            /*int score = FindWord(wordString);
-            foreach (Cell_script cs in word)
-            {
-                if (cs.doubleWord)
-                    score *= 2;
-                else if (cs.tripleWord)
-                    score *= 3;
+                foreach (CellPlate_script cs in players[turn].plate.cells)
+                    if (cs.let != null)
+                        count++;
+
+                foreach (Cell_script cs in word)
+                {
+                    cs.selected = false;
+                    cs.attached = true;
+                    cs.SetPoints();
+                }
+
+                if (count == 0 && !endingTurn)
+                    players[turn].AddPoints(15);
+                players[turn].ChangeLetters();
+                Pointmanager_script.MovePoints();
+
+                word.Clear();
+                vertical = horizontal = false;
             }
-            players[turn].AddPoints(score);*/
-            word.Clear();
-            vertical = horizontal = false;
+            else
+                UI_script.singleton.DoesntExist();
         }
         else    //замена букв
         {
             Cursor_script.exchange = !Cursor_script.exchange;
+            ButtonUpdate();
             if (!Cursor_script.exchange)
             {
                 int count = 0;
@@ -363,6 +369,7 @@ public class GameManager_script : MonoBehaviour
                 if (count == 7)
                     return;
                 endingTurn = true;
+                Cursor_script.ignoreInput = true;
                 players[turn].ChangeLetters();
                 vertical = horizontal = false;
             }
@@ -370,7 +377,7 @@ public class GameManager_script : MonoBehaviour
     }
     public static void Next()
     {
-        endingTurn = false; 
+        endingTurn = false;
         gm.ButtonUpdate();
         ShowNumber_script.doubleWord = false;
         ShowNumber_script.tripleWord = false;
@@ -380,27 +387,17 @@ public class GameManager_script : MonoBehaviour
         players[turn].ChangeLetters();
         UI_script.NextTurn();
     }
-    public int FindWord(string w)
+    public bool FindWord(string w)
     {
         TextAsset textFile = dictionary[alphabet.IndexOf(w[0])];
         string[] wordsInText = textFile.text.Split('\n');
-        int score = 0;
         foreach (string currentWord in wordsInText)
         {
-            if (currentWord == w)
+            if (currentWord.Contains(w))
             {
-                for (int i = 0; i < word.Count; i++)
-                {
-                    if (word[i].doubleLetter)
-                        score += word[i].attachedLetter.points * 2;
-                    else if (word[i].tripleLetter)
-                        score += word[i].attachedLetter.points * 3;
-                    else
-                        score += word[i].attachedLetter.points;
-                }
-                return score;
+                return true;
             }
         }
-        return 0;
+        return false;
     }
 }

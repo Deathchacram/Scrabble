@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UI_script : MonoBehaviour
 {
-    public GameObject settingsMenu;
-    public Image nextTurnImag, backgroun, rules; 
-    public static GameObject settingsMenuStatic;
-    public static Image nextTurnImage, background;
+    public Image nextTurnImag, backgroun, settingsMenu, doesNotExist;
+    public static Image background;
+    public static UI_script singleton;
 
     [SerializeField]
     private Image[] scoreImage;
@@ -23,22 +20,23 @@ public class UI_script : MonoBehaviour
 
     void Start()
     {
-        settingsMenuStatic = settingsMenu;
-        nextTurnImage = nextTurnImag;
+        singleton = this;
         background = backgroun;
         scoreImages = scoreImage;
         sprites = sprite;
         Hide();
     }
 
-    public static void  NextTurn()
+    public static void NextTurn()
     {
-        nextTurnImage.gameObject.SetActive(true);
+        singleton.nextTurnImag.gameObject.SetActive(true);
         background.enabled = true;
         Cursor_script.ignoreInput = true;
+        string nam = GameManager_script.players[GameManager_script.turn].playerName;
         for (int i = 0; i < 3; i++)
         {
-            int n = alphabet.IndexOf(GameManager_script.players[GameManager_script.turn].playerName[i]);
+            int n = alphabet.IndexOf(nam[i]);
+            Debug.Log(n);
             scoreImages[i].sprite = sprites[n];
             scoreImages[i].color = new Color(1, 1, 1, 1);
         }
@@ -53,14 +51,24 @@ public class UI_script : MonoBehaviour
             scoreImages[i].sprite = null;
             scoreImages[i].color = new Color(0, 0, 0, 0);
         }
-        nextTurnImage.gameObject.SetActive(false);
+        singleton.nextTurnImag.gameObject.SetActive(false);
     }
 
     public void Settings()
     {
-        settingsMenuStatic.gameObject.SetActive(true);
+        settingsMenu.gameObject.SetActive(true);
         Cursor_script.ignoreInput = true;
         background.enabled = true;
+    }
+    public void DoesntExist()
+    {
+        background.enabled = true;
+        doesNotExist.gameObject.SetActive(true);
+    }
+    public void DoesntExistDisable()
+    {
+        background.enabled = false;
+        doesNotExist.gameObject.SetActive(false);
     }
     public static void OpenUrl()
     {
@@ -68,6 +76,12 @@ public class UI_script : MonoBehaviour
     }
     public static void Load()
     {
+        foreach(Player_script ps in GameManager_script.players)
+        {
+            ps.name = "aaa";
+            ps.EndGame();
+            ps.gameObject.SetActive(false);
+        }
         SceneManager.LoadScene("MainMenu");
     }
 }
